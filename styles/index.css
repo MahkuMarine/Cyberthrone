@@ -17,6 +17,7 @@ section#header {
     background-color: #0000ff;
     font-size: .8rem;
     padding: 1em;
+    z-index: 1;
 }
 
 section#header header {
@@ -60,7 +61,7 @@ section#header div.intro-head {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 450px;
+    grid-template-rows: 440px;
 }
 
 section#header div.intro-head div.brand {
@@ -108,8 +109,102 @@ section#header div.intro-head img {
 
 /* CONTENT SECTION STYLES */
 section#content {
-    height: 400px;
-    background-color: #d9d9fe;
-    transform: skewY(2deg);
-    margin-top: -29px;
+    background-color: #eaeafa;
+}
+
+section#content div.after-head {
+    position: relative;
+    top: -14px;
+    width: 100%;
+    height: 55px;
+    background-color: #eaeafa;
+    overflow: hidden;
+    transform: skewY(1.4deg);
+}
+
+section#content div.after-head > div.empty1 {
+    width: 23%;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    top: -90px;
+}
+
+section#content div.after-head > div.empty2 {
+    width: 33%;
+    height: 100px;
+    background-color: orange;
+    position: absolute;
+    left: 130px;
+    top: -90px;
+}
+
+section#content div.partners {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    grid-gap: 2.3em;
+    padding-bottom: 3em;
+    border-bottom: 1.3px solid #7a7aeb4d;
+}
+
+section#content div.partners p {
+    grid-column: 1/-1;
+    font-size: .8rem;
+}
+
+section#content div.partners i {
+    max-width: 60%;
+    color: #0000ff;
+}
+
+section#content div.customer-trust {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3em;
+    border: 1px solid;
+}
+
+section#content div.customer-trust img {
+    width: 100%;
+    height: 530px;
+    object-fit: contain;
+    filter: hue-rotate(219deg) invert(100%);
+}
+
+section#content div.customer-trust div.cust-trust-cont {
+    width: 75%;
+}
+
+section#content div.customer-trust h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+}
+
+section#content div.customer-trust p {
+    margin: 1.3em 0;
+}
+
+section#content div.customer-trust div.rating p {
+    float: left;
+    margin-right: 12px;
+    width: 25%;
+    font-size: .8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section#content div.customer-trust div.rating::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+section#content div.customer-trust div.rating span {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #c60303;
+    font-family: 'Space Grotesk', sans-serif;
 }
