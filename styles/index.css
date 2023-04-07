@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&family=Space+Grotesk:wght@600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -57,4 +59,22 @@ section#header div.intro-head {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+section#header div.intro-head div.brand {
+    padding: 4em 6em;
+} 
+
+section#header div.intro-head div.brand h1 {
+    font-size: 4.6em;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+section#header div.intro-head div.brand h1 span > i {
+    color: #250b69;
+    font-size: 1em;
+}
+
+section#header div.intro-head div.brand h1 span {
+    border: 1px solid;
 }
