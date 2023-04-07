@@ -46,13 +46,14 @@ section#header a:hover {
     text-underline-offset: 3px;
 }
 
-section#header div.user button {
-    background-color: transparent;
+section#header div.user button,
+section#header div.intro-head div.brand button {
     border: none;
     background-color: #d12b2b;
-    border-radius: 3px;
+    border-radius: 6px;
     padding: .8em 1.2em;
     color: #fefefe;
+    font-size: .8rem;
 }
 
 section#header div.intro-head {
@@ -66,15 +67,33 @@ section#header div.intro-head div.brand {
 } 
 
 section#header div.intro-head div.brand h1 {
-    font-size: 4.6em;
+    font-size: 4.9em;
     font-family: 'Space Grotesk', sans-serif;
-}
-
-section#header div.intro-head div.brand h1 span > i {
-    color: #250b69;
-    font-size: 1em;
+    text-align: justify;
+    line-height: 64px;
 }
 
 section#header div.intro-head div.brand h1 span {
-    border: 1px solid;
+    color: #8250ff;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: end;
+    font-size: 3.7rem;
+}
+
+section#header div.intro-head div.brand p {
+    text-align: justify;
+    margin: 1.3em 0;
+}
+
+section#header div.intro-head div.brand > p.header-social {
+    font-size: .9em;
+}
+
+section#header div.intro-head div.brand > p.header-social i {
+    margin: 0 4px;
+    font-size: 1.3em;
+}
+
+section#header div.intro-head div.brand button {
+    margin-left: -7px;
 }
