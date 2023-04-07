@@ -164,7 +164,6 @@ section#content div.customer-trust {
     justify-content: space-around;
     align-items: center;
     padding: 3em;
-    border: 1px solid;
 }
 
 section#content div.customer-trust img {
@@ -207,4 +206,53 @@ section#content div.customer-trust div.rating span {
     font-weight: 600;
     color: #c60303;
     font-family: 'Space Grotesk', sans-serif;
+}
+
+section#content div.services-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.2rem 1rem;
+    justify-items: center;
+    background-color: #e3e3f7;
+    padding: 1em 3.4em;
+}
+
+section#content div.services-cards h2 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+section#content div.services-cards div:first-of-type {
+    grid-column: 1/-1;
+    width: 35%;
+    text-align: center;
+}
+
+section#content div.services-cards div:first-of-type h2 {
+    /* word-spacing: 23px; */
+    font-size: 1.9rem;
+    margin: 22px;
+    text-decoration: overline #4408d2;
+}
+
+section#content div.services-cards div:first-of-type p {
+    margin: 7px 22px;
+    font-size: .9rem;
+}
+
+section#content div.services-cards div:not(:first-of-type) {
+    width: 70%;
+    background-color: #f6f6f6;
+    padding: 22px;
+    font-size: .7rem;
+    box-shadow: 0 0 2px #4408d266;
+    border-radius: 4px;
+}
+
+section#content div.services-cards div:not(:first-of-type) i {
+    font-size: 1.3em;
+    color: #4408d2;
+}
+
+section#content div.services-cards div:not(:first-of-type) h2 {
+    margin: 6px 0 12px 0;
 }
