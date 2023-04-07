@@ -60,6 +60,7 @@ section#header div.intro-head {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px;
 }
 
 section#header div.intro-head div.brand {
@@ -85,15 +86,22 @@ section#header div.intro-head div.brand p {
     margin: 1.3em 0;
 }
 
-section#header div.intro-head div.brand > p.header-social {
+section#header div.intro-head div.brand > div.header-social {
     font-size: .9em;
 }
 
-section#header div.intro-head div.brand > p.header-social i {
-    margin: 0 4px;
+section#header div.intro-head div.brand > div.header-social i {
+    margin: 14px 4px;
     font-size: 1.3em;
 }
 
 section#header div.intro-head div.brand button {
     margin-left: -7px;
+}
+
+section#header div.intro-head::after {
+    content: "";
+    background: #0000ff url(../images/Cybersecurity-Transparent-Images.png) no-repeat fixed 89% 30%;
+    background-size: 40%;
+    background-blend-mode: screen;
 }
