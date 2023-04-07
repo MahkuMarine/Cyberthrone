@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER SECTION */
+
+section#header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fefefe;
+    background-color: #0000ff;
+    font-size: .8rem;
+    padding: 1em;
+}
+
+section#header header {
+    width: 30%;
+    text-align: center;
+}
+
+section#header h1 a:hover, 
+section#header div.user a:hover {
+    text-decoration: none;
+}
+
+section#header nav {
+    width:45%;
+    padding: .4em;
+}
+
+section#header a {
+    text-decoration: none;
+    padding: .4em;
+    margin-right: 27px;
+    color: #fefefe;
+}
+
+section#header a:hover {
+    text-decoration: underline dotted #fefefe 2.5px;
+    text-underline-offset: 3px;
+}
+
+section#header div.user button {
+    background-color: transparent;
+    border: none;
+    background-color: #d12b2b;
+    border-radius: 3px;
+    padding: .8em 1.2em;
+    color: #fefefe;
+}
+
+section#header div.intro-head {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
