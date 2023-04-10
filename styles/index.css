@@ -7,6 +7,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h2 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+button {
+    border: none;
+    background-color: #d12b2b;
+    border-radius: 6px;
+    padding: .8em 1.2em;
+    color: #fefefe;
+    font-size: .8rem;
+}
+
 /* HEADER SECTION STYLES*/
 
 section#header {
@@ -45,16 +58,6 @@ section#header a {
 section#header a:hover {
     text-decoration: underline dotted #fefefe 2.5px;
     text-underline-offset: 3px;
-}
-
-section#header div.user button,
-section#header div.intro-head div.brand button {
-    border: none;
-    background-color: #d12b2b;
-    border-radius: 6px;
-    padding: .8em 1.2em;
-    color: #fefefe;
-    font-size: .8rem;
 }
 
 section#header div.intro-head {
@@ -109,17 +112,17 @@ section#header div.intro-head img {
 
 /* CONTENT SECTION STYLES */
 section#content {
-    background-color: #eaeafa;
+    background-color: #d3f0fa;
 }
 
 section#content div.after-head {
     position: relative;
-    top: -14px;
+    top: -43px;
     width: 100%;
-    height: 55px;
-    background-color: #eaeafa;
+    height: 95px;
+    background-color: #d3f0fa;
     overflow: hidden;
-    transform: skewY(1.4deg);
+    transform: skewY(3.9deg);
 }
 
 section#content div.after-head > div.empty1 {
@@ -147,6 +150,7 @@ section#content div.partners {
     grid-gap: 2.3em;
     padding-bottom: 3em;
     border-bottom: 1.3px solid #7a7aeb4d;
+    margin-top: -23px;
 }
 
 section#content div.partners p {
@@ -178,7 +182,6 @@ section#content div.customer-trust div.cust-trust-cont {
 }
 
 section#content div.customer-trust h2 {
-    font-family: 'Space Grotesk', sans-serif;
     font-size: 2rem;
 }
 
@@ -213,12 +216,9 @@ section#content div.services-cards {
     grid-template-columns: repeat(3, 1fr);
     gap: 2.2rem 1rem;
     justify-items: center;
-    background-color: #e3e3f7;
+    /* background-color: #c4ebf9; */
+    background: #c4ebf9 url(../images/header-bg.png) no-repeat fixed left;
     padding: 1em 3.4em;
-}
-
-section#content div.services-cards h2 {
-    font-family: 'Space Grotesk', sans-serif;
 }
 
 section#content div.services-cards div:first-of-type {
@@ -228,7 +228,6 @@ section#content div.services-cards div:first-of-type {
 }
 
 section#content div.services-cards div:first-of-type h2 {
-    /* word-spacing: 23px; */
     font-size: 1.9rem;
     margin: 22px;
     text-decoration: overline #4408d2;
@@ -255,4 +254,116 @@ section#content div.services-cards div:not(:first-of-type) i {
 
 section#content div.services-cards div:not(:first-of-type) h2 {
     margin: 6px 0 12px 0;
+}
+
+section#content div.solution-house {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+}
+
+section#content div.solution-house img {
+    width: 100%;
+    filter: contrast(294%) hue-rotate(350deg);
+}
+
+section#content div.solution-house div.solution {
+    padding: 1.3em 2.6em;
+    width: 80%;
+}
+
+section#content div.solution-house div.solution h2 {
+    font-size: 2em;
+    line-height: 33px;
+}
+
+section#content div.solution-house div.solution p {
+    margin: 21px 0;
+    font-size: .9rem;
+    text-align: justify;
+}
+
+section#content div.solution-house div.solution p:first-of-type {
+    font-weight: 700;
+    text-align: left;
+}
+
+section#content div.solution-house div.solution a {
+    text-decoration: none;
+    background-color: #d12b2b;
+}
+
+
+section#content div.testimonial {
+    position: relative;
+}
+
+section#content div.testimonial img {
+    width: 100%;
+    object-fit: cover;
+    transform: scaleX(-1);
+}
+
+section#content div.testimonial div.testimony  {
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    right: 65px;
+    transform: translate(0, -50%);
+    background-color: #d3f0fa;
+    padding: 2em;
+    border-radius: 8px;
+}
+
+section#content div.testimonial div.testimony h2 {
+    font-size: 1.5rem;
+}
+
+section#content div.testimonial div.testimony p {
+    font-size: .8rem;
+    margin: 23px 0;
+}
+
+section#content div.after-head > .empty3 {
+    background-color: red;
+    height: 100px;
+    width: 15%;
+    position: absolute;
+    bottom: 83px;
+}
+
+section#content div.after-head > .empty4 {
+    background-color: orange;
+    height: 100px;
+    width: 35%;
+    position: absolute;
+    bottom: 83px;
+    left: 480px;
+}
+
+section#content div.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-items: center;
+    justify-content: center;
+}
+
+section#content div.blogs img {
+    width: 100%;
+}
+
+section#content div.blogs > h2 {
+    grid-column: 1/-1;
+}
+
+section#content div.blogs > p {
+    grid-column: 1/-1;
+}
+
+section#content div.blogs > p:last-of-type {
+    grid-column: 1/-1;
+}
+
+section#content div.blogs div.blog-post {
 }
