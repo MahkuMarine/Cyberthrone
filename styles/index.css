@@ -129,7 +129,7 @@ section#content div.after-head {
 section#content div.after-head > div.empty1 {
     width: 23%;
     height: 100px;
-    background-color: red;
+    background-color: #ff0000;
     position: absolute;
     right: 0;
     top: -90px;
@@ -138,7 +138,7 @@ section#content div.after-head > div.empty1 {
 section#content div.after-head > div.empty2 {
     width: 33%;
     height: 100px;
-    background-color: orange;
+    background-color: #ffa500;
     position: absolute;
     left: 130px;
     top: -90px;
@@ -249,7 +249,7 @@ section#content div.services-cards div:not(:first-of-type) {
 
 section#content div.services-cards div:not(:first-of-type) i {
     font-size: 1.3em;
-    color: #4408d2;
+    color: #00658d;
 }
 
 section#content div.services-cards div:not(:first-of-type) h2 {
@@ -326,7 +326,7 @@ section#content div.testimonial div.testimony p {
 }
 
 section#content div.after-head > .empty3 {
-    background-color: red;
+    background-color: #ff0000;
     height: 100px;
     width: 15%;
     position: absolute;
@@ -334,7 +334,7 @@ section#content div.after-head > .empty3 {
 }
 
 section#content div.after-head > .empty4 {
-    background-color: orange;
+    background-color: #ffa500;
     height: 100px;
     width: 35%;
     position: absolute;
